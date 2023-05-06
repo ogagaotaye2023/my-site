@@ -662,21 +662,20 @@ i {
 
   /* services */
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 90vw;
     gap: 1rem;
   }
 
   .service.light {
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0.7rem 0.5rem 2rem;
+    display: flex;
+    align-items: center;
   }
 
-  .service__icon {
-    padding-top: 15%;
-  }
 
   #services i {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
 
