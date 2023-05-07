@@ -655,7 +655,7 @@ i {
 
   .float__nav i {
     background: transparent;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
