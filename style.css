@@ -682,7 +682,7 @@ i {
   /* header */
   header {
     margin-top: 2rem;
-    height: 100vh;
+    height: calc(100vh - 1rem);
   }
 
   .header__profile {
