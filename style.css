@@ -242,12 +242,13 @@ header {
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5rem;
 }
 
 .header__container p {
   width: 40rem;
   text-align: center;
-  margin: -1rem auto;
+  margin: 1rem auto;
 }
 
 .header__cta {
@@ -351,7 +352,7 @@ header {
 
 
 /* service */
-.container {
+.container.services_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem
@@ -378,19 +379,18 @@ header {
   color: var(--color-white);
 }
 
+
 /* reviews */
 #reviews p {
   margin-bottom: 2.5rem;
 }
 
-/* Slideshow container */
 .slideshow-container {
   width: 60%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
@@ -400,7 +400,6 @@ header {
   object-fit: contain;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -416,20 +415,17 @@ header {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: var(--color-primary);
   color: var(--color-light);
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -542,8 +538,73 @@ i {
 }
 
 
+
+/* Media Query Tablets */
+@media screen and (max-width:1100px) {
+  .container.nav__container {
+    justify-content: center;
+  }
+
+  .nav__logo {
+    display: none;
+  }
+
+  .floatNav {
+    display: none;
+  }
+
+  /* header */
+  .header__profile {
+    height: 45vh;
+    width: 50vw;
+  }
+
+  .header__socials {
+    display: none;
+  }
+
+  #services,
+  #reviews,
+  #contact {
+    padding-top: 2rem;
+  }
+
+  /* about */
+  #about {
+    padding-top: 0;
+  }
+
+  .container.about__container {
+    grid-template-columns: 1fr;
+  }
+
+  .about__portrait {
+    display: none;
+  }
+
+  .about__right p {
+    text-align: center;
+  }
+
+  /* service */
+  .container.services_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* contact */
+  .container.contact__container .contact__options {
+    grid-template-columns: 1fr;
+    gap: 4%;
+  }
+
+  .contact__option {
+    width: 70vw;
+  }
+}
+
 /* Media Query Mobiles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   h1 {
     font-size: 2.2rem;
   }
@@ -594,7 +655,7 @@ i {
 
   .float__nav i {
     background: transparent;
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
@@ -620,7 +681,7 @@ i {
 
   /* header */
   header {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     height: 100vh;
   }
 
@@ -661,7 +722,7 @@ i {
 
 
   /* services */
-  .container {
+  .container.services_container {
     grid-template-columns: 1fr;
     width: 90vw;
     gap: 1rem;

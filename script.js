@@ -9,7 +9,6 @@ function setActive(nav) {
   return nav;
 }
 
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
